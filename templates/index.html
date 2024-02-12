@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+</head>
+<body>
+    <h1>YouTube Downloader</h1>
+    <form action="/download" method="post">
+        <input type="text" name="video_url" placeholder="Insira o link do vídeo do YouTube" required>
+        <button type="submit">Baixar</button>
+    </form>
+    {% if error %}
+        <p>Erro ao baixar o vídeo. Por favor, verifique o link do vídeo e tente novamente.</p>
+    {% endif %}
+</body>
+</html>
