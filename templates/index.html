@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4D43B864;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            color: red;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>YouTube Downloader</h1>
+    <h1>DownTUBE</h1>
     <form action="/download" method="post">
         <input type="text" name="video_url" placeholder="Insira o link do vídeo do YouTube" required>
         <button type="submit">Baixar</button>
